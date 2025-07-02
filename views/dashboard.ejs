@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - TimeTable Genie</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="user-info">
+      <img src="https://api.dicebear.com/7.x/initials/svg?seed=<%= user %>" alt="avatar" class="avatar">
+      <span>Hello, <%= user.split('@')[0] %> 👋</span>
+    </div>
+    <a href="/logout"><button>Logout</button></a>
+  </div>
+
+  <div class="container">
+    <h2>📚 Welcome to Your Dashboard</h2>
+    <div class="grid">
+      <div class="grid-item">🧠 Timetable Module</div>
+      <div class="grid-item">📝 Notes Module</div>
+      <div class="grid-item">✅ Tasks Module</div>
+      <div class="grid-item"> Time you have </div>
+      <div class="grid-item"> Subjects </div>
+      <div class="grid-item">Difficulty Levels </div>
+    </div>
+  </div>
+</body>
+</html>
